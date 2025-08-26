@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hassaku Cute gallery</title>
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+    <!-- Floating Particles -->
+    <div class="particle" style="left: 10%; animation: float 15s linear infinite;"></div>
+    <div class="particle" style="left: 30%; animation: float 20s linear infinite 2s;"></div>
+    <div class="particle" style="left: 50%; animation: float 18s linear infinite 4s;"></div>
+    <div class="particle" style="left: 70%; animation: float 22s linear infinite 1s;"></div>
+    <div class="particle" style="left: 90%; animation: float 16s linear infinite 3s;"></div>
+
+    <!-- Header -->
+    <header>
+        <h1>Hassaku Cute gallery</h1>
+        <a href="https://www.example.com" target="_blank" rel="noopener noreferrer" class="link-box">
+            <span>Note-LoRAレシピ →</span>
+        </a>
+    </header>
+
+    <!-- Navigation -->
+    <nav class="nav-container">
+        <div class="nav-tabs">
+            <button class="tab-button active" data-tab="category1">エヴァンゲリオン</button>
+            <button class="tab-button" data-tab="category2">とある魔術師の禁書目録</button>
+        </div>
+    </nav>
+
+    <!-- Gallery -->
+    <div class="gallery-container">
+        <!-- Category 1 -->
+        <div class="gallery-section active" id="category1">
+            <div class="image-grid" id="category1-grid">
+                <!-- Images will be dynamically loaded here -->
+            </div>
+        </div>
+
+        <!-- Category 2 -->
+        <div class="gallery-section" id="category2">
+            <div class="image-grid" id="category2-grid">
+                <!-- Images will be dynamically loaded here -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal" id="imageModal">
+        <div class="modal-content">
+            <span class="modal-close">&times;</span>
+            <img src="" alt="Expanded Image" id="modalImage">
+        </div>
+    </div>
+<script src="./assets/js/script.js"></script>
+</body>
+</html>
